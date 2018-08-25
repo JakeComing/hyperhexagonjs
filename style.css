@@ -2,7 +2,7 @@
   position: relative;
   width: 300px;
   height: 173.21px;
-  background-color: #6340f0;
+  background-color: #2A3C65;
   margin: 86.60px 0;
 }
 
@@ -17,13 +17,13 @@
 
 .hexagon:before {
   bottom: 100%;
-  border-bottom: 86.60px solid #6340f0;
+  border-bottom: 86.60px solid #2A3C65;
 }
 
 .hexagon:after {
   top: 100%;
   width: 0;
-  border-top: 86.60px solid #6340f0;
+  border-top: 86.60px solid #2A3C65;
 }
 .hex-row {
   width: 100%;
