@@ -13,6 +13,13 @@ function constructHexagonRow(rowAttributes) {
   console.log("the totalRequestedWidth is: " + totalRequestedWidth);
   if (totalRequestedWidth < window.innerWidth) {
     console.log("this is a reasonable request");
+    if (rowAttributes.align == "center") {
+      var centerAlignMargin = (window.innerWidth - totalRequestedWidth) / 2;
+      console.log("The centerAlignMargin is: " + centerAlignMargin);
+      $(".hex-row").css("margin-left", centerAlignMargin+"px").css("margin-right", centerAlignMargin+"px").css("width", totalRequestedWidth+"px");
+    } else if (rowAttributes.align == "left" || rowAttributes.align == "right") {
+
+    }
   } else {
     console.log("If I render this, you won't be able to see the whole thing!");
   }

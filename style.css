@@ -28,3 +28,7 @@
 .hex-row {
   width: 100%;
 }
+.hex-row {
+  background-color: gray;
+  height: 20px;
+}
