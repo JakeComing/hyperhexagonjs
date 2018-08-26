@@ -1,6 +1,8 @@
 // creates the HTML & CSS for a single hexagon.
-function createSingleHexagon(hexAttr, positionInRow) {
-
+function createSingleHexagon(innerBoxWidth, elongationRatio, hexTopType, styles) {
+  var hexWidth = innerBoxWidth;
+  var hexHeight = (hexWidth * Math.sqrt(3)) / 2;
+  console.log('hexHeight: '+hexHeight);
 }
 
 // responsible for assembling html output and assigning styles
