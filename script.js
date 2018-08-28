@@ -2,7 +2,15 @@
 function createSingleHexagon(innerBoxWidth, elongationRatio, hexTopType, styles) {
   var hexWidth = innerBoxWidth;
   var hexHeight = (hexWidth * Math.sqrt(3)) / 2;
-  console.log('hexHeight: '+hexHeight);
+  var hexSquareHeight = hexHeight * ( 2 / 3 );
+  var hexTriangleHeight = hexHeight / 3;
+  var transparentBorderWidth = hexWidth / 2;
+  var hexDimensions = {
+    width: hexWidth,
+    height: hexHeight,
+    margin: hexTriangleHeight,
+    transparentBorder: transparentBorderWidth;
+  };
 }
 
 // responsible for assembling html output and assigning styles
