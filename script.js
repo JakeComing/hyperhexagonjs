@@ -27,6 +27,10 @@ function constructHexagonRow(rowAttributes) {
       var centerAlignMargin = (window.innerWidth - totalRequestedWidth) / 2;
       console.log("The centerAlignMargin is: " + centerAlignMargin);
       $(".hex-row").css("margin-left", centerAlignMargin+"px").css("margin-right", centerAlignMargin+"px").css("width", totalRequestedWidth+"px");
+      for (var i = 0; i < rowAttributes.hexCount.length; i++) {
+        // rowAttributes.hexCount[i]
+        // Figure out each of the hexagons
+      }
     } else if (rowAttributes.align == "left" || rowAttributes.align == "right") {
 
     }
