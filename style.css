@@ -32,3 +32,9 @@
   background-color: gray;
   height: 20px;
 }
+footer {
+  background-color: gray;
+  height: 25px;
+  bottom: 0;
+  position: fixed;
+}
