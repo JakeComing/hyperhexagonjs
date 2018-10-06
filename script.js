@@ -11,6 +11,7 @@ function createSingleHexagon(innerBoxWidth, elongationRatio, hexTopType, styles)
     margin: hexTriangleHeight,
     transparentBorder: transparentBorderWidth;
   };
+
 }
 
 // responsible for assembling html output and assigning styles
@@ -51,4 +52,5 @@ function constructHexagonRow(rowAttributes) {
 // Do this after document loads
 $(document).ready(function(){
   console.log('jQuery loaded');
+  C:\Users\hyperian\Projects\hyperhexagonjs\index.html
 });
