@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Hyper Hexagon JS</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="class-single-hexagon.js"></script>
 		<script src="script.js"></script>
 	</head>
@@ -16,11 +16,12 @@
 				<form id="hex-input">
 					<input type="number" name="hex-window-width" placeholder="Hexagon Grid Width (pixels)">
 					<input type="number" name="hex-window-height" placeholder="Hexagon Grid Height (pixels)">
+					<input type="number" name="hex-side-length" placeholder="Hexagon Side Length (pixels)" />
 					<select>
 						<option value="pointy-top">Pointy Top</option>
 						<option value="flat-top">Flat Top</option>
 					</select>
-					<button type="button" id="rewrite-hex-grid-button">Show me the hex grid!</button>
+					<button type="submit" id="rewrite-hex-grid-button">Show me the hex grid!</button>
 				</form>
 			</nav>
 		</header>
