@@ -13,15 +13,18 @@
 	<body>
 		<header>
 			<nav>
-				<form id="hex-input">
-					<input type="number" name="hex-window-width" placeholder="Hexagon Grid Width (pixels)">
-					<input type="number" name="hex-window-height" placeholder="Hexagon Grid Height (pixels)">
-					<input type="number" name="hex-side-length" placeholder="Hexagon Side Length (pixels)" />
+				<form id="hexInput">
+					<label for="hexWidth">Width of Hexagon Grid:</label><br />
+					<input id="hexWidth" type="number" name="hex-window-width" placeholder="Hexagon Grid Width (pixels)">
+					<label for="hexHeight">Height of Hexagon Grid:</label><br />
+					<input id="hexHeight" type="number" name="hex-window-height" placeholder="Hexagon Grid Height (pixels)">
+					<label for="hexSideLength">Length of Hexagon Side</label><br />
+					<input id="hexSideLength" type="number" name="hex-side-length" placeholder="Hexagon Side Length (pixels)" />
 					<select>
 						<option value="pointy-top">Pointy Top</option>
 						<option value="flat-top">Flat Top</option>
 					</select>
-					<input type="submit" id="rewrite-hex-grid-button" value="Hexagon Tiem!!1!" />
+					<input type="submit" id="rewrite-hex-grid-button" value="Hexagon Tiem!!1!"  />
 				</form>
 			</nav>
 		</header>
