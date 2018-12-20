@@ -1,18 +1,21 @@
 class Hexagon {
+	// the hexagon top type and side length is needed for SVG  coordinate calculation
 	constructor(hexagonTopType, hexagonSideLength) {
 		this.hexagonTopType = hexagonTopType;
 		this.hexagonSideLength = hexagonSideLength;
 	}
 
 	get hexagonType() {
-		return this._hexagonType;
+		return this.hexagonTopType;
 	}
+
 	set hexagonTopType(value) {
 		if (value !== ("pointy" || "flat") ) {
 			alert('invalid hexagon type selected, please specify pointy top or flat top');
 		}
 		this._hexagonTopType = value;
 	}
+	
 	calculateHexagonPoints(topType, sideLength) {
 		if(topType === "pointy") {
 			var height = sideLength * 2;
@@ -63,5 +66,5 @@ class Hexagon {
 	}
 }
 
-let hexagon = new Hexagon("pointy", 200); 
+let hexagon = new Hexagon("pointy", 200);
 // hexagon.logHexagonDetails();
