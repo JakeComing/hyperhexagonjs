@@ -1,34 +1,22 @@
-window.addEventListener("load", function () {
-  function sendData() {
-    var XHR = new XMLHttpRequest();
+var app = new PIXI.Application(800, 600, {backgroundColor : 0x1099bb});
+document.body.appendChild(app.view);
 
-    // Bind the FormData object and the form element
-    var FD = new FormData(form);
+// create a new Sprite from an image path
+var bunny = PIXI.Sprite.fromImage('required/assets/basics/bunny.png')
 
-    // Define what happens on successful data submission
-    XHR.addEventListener("load", function(event) {
-      alert(event.target.responseText);
-    });
+// center the sprite's anchor point
+bunny.anchor.set(0.5);
 
-    // Define what happens in case of error
-    XHR.addEventListener("error", function(event) {
-      alert('Oops! Something went wrong.');
-    });
+// move the sprite to the center of the screen
+bunny.x = app.screen.width / 2;
+bunny.y = app.screen.height / 2;
 
-    // Set up our request
-    XHR.open("POST", "https://example.com/cors.php");
+app.stage.addChild(bunny);
 
-    // The data sent is what the user provided in the form
-    XHR.send(FD);
-  }
-
-  // Access the form element:
-  var form = document.getElementById('hexInput');
-
-  // take over its submit element
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    sendData();
-  });
+// Listen for animate update
+app.ticker.add(function(delta) {
+    // just for fun, let's rotate mr rabbit a little
+    // delta is 1 if running at 100% performance
+    // creates frame-independent transformation
+    bunny.rotation += 0.1 * delta;
 });
